@@ -1,0 +1,765 @@
+:root{
+    /*main theme color*/
+    --m-t-color:#e8175d;
+    /*main theme lighter*/
+    --m-t-l-color:rgb(232,23,93,0.6);
+    /*main pallete color*/
+    --m-p-color:rgb(0,0,0,0.8);
+    /*main font color*/
+    --m-f-color:rgb(255, 255, 255);
+}
+*::-webkit-scrollbar{
+    width: 0;
+}
+
+h1,h2,h3,h4,h5,h6{
+    margin: 0;
+}
+div{
+    position: relative;
+}
+
+
+body{
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: var(--m-f-color);
+    margin: 0;
+    width: 100%;
+    background-image: url("../CN_Major_CSS_HTML/resources/Images/Body/bodybg.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    height: 100vh;
+}
+i{
+    font-size: 1.3rem;
+    cursor: pointer;
+}
+#search-input i{
+    color: var(--m-t-color);
+}
+
+
+
+.big-section{
+    height: 300px;
+    width: 100%;
+    margin-bottom: 1.5rem;
+    /* border: 2px solid black; */
+}
+
+.big-section h3{
+    margin-bottom: 0.5rem;
+}
+
+
+.small-section{
+    height: 200px;
+    width: 100%;
+    margin-bottom: 1.5rem;
+    border: 3px solid black;
+}
+
+.small-section h3{
+    margin-bottom: 0.5rem;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*Animations*/
+
+@keyframes rotate{
+    0%{
+        transform: rotateZ(0deg);
+    }
+    100%{
+        transform: rotateZ(360deg);
+    }
+}
+
+@keyframes swing{
+    0%{
+        transform: rotateZ(0deg);
+    }
+    25%{
+        transform: rotateZ(20deg);
+    }
+    75%{
+        transform: rotateZ(-20deg);
+    }
+    100%{
+        transform: rotateZ(0deg);
+    }
+}
+
+
+@keyframes carouselAnimation {
+    0% { transform: translateX(10%); }
+
+    100%{
+      transform: translateX(-110%);
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*navigation bar*/
+
+nav{
+    position: fixed;
+    top: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    min-width: 320px;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 0.5rem;
+    background-image: linear-gradient(var(--m-p-color) 40px,transparent);
+    z-index:2;
+}
+
+/*logo part -left of nav*/
+#logo-fav{
+    width: 25%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#logo-fav img{
+    animation: rotate 3s ease-in-out 0s infinite;
+}
+.nav-inner{
+    display: flex;
+    align-items: center;
+}
+#logo-name{
+    margin-left: -1.4rem;
+}
+
+
+
+figure{
+    overflow: hidden;
+    width: 50px;
+    height: 50px;
+}
+
+
+
+/*search and user, right part of nav*/
+#search-user{
+    width: 35%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+#search-input{
+    background-color: white;
+    border-radius: 20px;
+    padding: 0.5rem 20px;
+    display: flex;
+    justify-content: space-between;
+}
+#search-input input{
+    padding: 2px;
+    border: none;
+    text-align: center;
+}
+input:focus{
+    outline: none;
+}
+#notification{
+    padding: 3px;
+    animation: swing 1s linear  3;
+}
+
+#dot{
+    position:absolute ;
+    top: 0;
+    right:0;
+    font-size: 0.6rem;
+    color: red;
+}
+
+
+
+
+/*navigation ends here*/
+
+
+
+
+
+
+/*main*/
+
+#content{
+    width: 95%;
+    margin: auto;
+    grid-template-columns:68% 2% 30%;
+    box-sizing: border-box;
+    top: 8rem;
+    min-width: 300px;
+    overflow-y: auto;
+    height: auto;
+}
+
+
+
+/*sections of the main starts here*/
+
+/*section-1 s-1*/
+
+
+.s-1{
+    justify-content: space-around;
+    align-items: center;
+    height: 100%;
+    overflow: hidden;
+}
+.s-1 div{
+    width: 30%;
+    height: 90%;
+    border-radius: 2px;
+}
+
+.s-1 img{
+    width: 100%;
+    height: 100%;
+}
+
+
+
+
+/*section-2 s-2- latest releses*/
+
+.s-2{
+    height: 90%;
+    
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    overflow:visible;
+}
+
+.s-2 img{
+    height: 100%;
+    width: 100%;
+}
+
+.s-2>div{
+    width: 45%;
+    height: 45%;
+    box-shadow: 0 0 0.7px 0px var(--m-t-l-color);
+}
+
+
+.s-2 h4{
+    margin-bottom: 0.5rem;
+}
+
+.s-2-item{
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+}
+
+
+
+.s-2-item>div:first-child:active .pause{
+    display: flex;
+    z-index: 1;
+}
+
+.s-2-item>div:first-child:active .play{
+    display: flex;
+    z-index: -1;
+}
+
+
+
+
+
+.s-2-item>div{
+    width: 30%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.s-2-option{
+    justify-content: flex-start!important;
+    align-items: flex-end!important;
+    padding: 0.3rem;
+    box-sizing: border-box;
+}
+
+.s-2 .dropdown-list{
+    top: 1.5rem;
+    width: 11rem;
+    text-align: center;
+}
+
+
+.center-items{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hidden{
+    display: none;
+    position: absolute;
+    top: 0;
+}
+
+.pause,.play{
+    width: 100%;
+    height: 100%;
+    background-color: rgb(0,0,0,0.6);
+}
+.pause i,.play i{
+    font-size: 3rem;
+}
+
+.position-absolute{
+    position: absolute;
+    top: 0;
+}
+
+
+.s-2-item>div:first-child:hover .play{
+    display: flex;
+}
+
+
+
+
+
+
+
+/*section-3-popular artists*/
+
+
+.s-3{
+    height: 90%;
+    width: 97%;
+    align-items: center;
+    justify-content: space-between;
+    overflow:visible
+}
+
+.s3-item{
+    height: 100%;
+    width: 15%;
+    align-self: center;
+}
+
+.s3-item .rounded-border{
+    overflow: hidden;
+    height: 80%;
+    width: 100%;
+}
+
+.s3-item h4{
+    width: 100%;
+    text-align: center!important;
+}
+
+
+
+
+/*section-4 s-4 music stations*/
+
+.s-4{
+    height: 90%;
+    vertical-align: middle;
+    width: 100%;
+    background-image: linear-gradient(to right,rgb(225, 151, 14),var(--m-t-color),pink);
+}
+
+#s-4-cards{
+    width: 20%;
+    height: 100%;
+    /* border: 2px solid white; */
+}
+
+
+#s-4-station{
+    width: 80%;
+    height: 100%;
+    /* border: 2px solid white; */
+    align-items: center;
+    justify-content: space-around;
+}
+.station{
+    width: 100%;
+    height: 100%;
+    background-color: rgb(0,0,0,0.3);
+}
+.station:hover{
+    background-color: rgb(0,0,0,0.8);
+    cursor: pointer;
+    color: var(--m-t-color);
+}
+#s-4-station>div{
+    width: 14%;
+    height: 58%;
+    border-radius: 50%;
+    /* border: 2px solid white; */
+    overflow: hidden;
+}
+#s-4-station>div>div{
+    position: absolute;
+}
+
+#s-4-cards>div{
+    position: absolute;
+    text-align: center;
+}
+#s-4-cards #div1{
+    width: 80%;
+    height: 50%;
+    background-color: var(--m-f-color);
+    box-shadow: 0 0 6px 0px var(--m-p-color);
+}
+
+#s-4-cards #div2{
+    height: 60%;
+    width: 70%;
+    background-color:black;
+    box-shadow: 0 0 2px 0.7px var(--m-p-color);
+}
+
+#s-4-cards #div3{
+    height: 70%;
+    width: 60%;
+    background-color:var(--m-t-color);
+    box-shadow: 0 0 2px 0.7px var(--m-p-color);
+}
+
+
+.s-4 i{
+    font-size: 2rem;
+}
+
+
+
+
+/*section s-5 music type*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*self-created classes*/
+
+
+/*Dropdown lists*/
+
+.pointer-cursor{
+    cursor: pointer;
+}
+.dropdown-checkbox{
+    display: none;
+}
+
+.dropdown-list{
+    width: auto;
+    display: none;
+    position: absolute;
+    top:3rem;
+    background-color: var(--m-p-color);
+    box-shadow: 0 0 2px 1px var(--m-p-color);
+    border-radius: 2px;
+    z-index: 1;
+}
+
+.dropdown-checkbox:checked+.dropdown-list{
+    display: block;
+}
+
+.dropdown-list li{
+    padding: 0.5rem 1rem;
+    list-style-type: none;
+    border-bottom: 2px solid var(--m-t-color);
+}
+.dropdown-list li a{
+    text-decoration: none;
+    color: var(--m-f-color);
+    font-weight: 600;
+}
+
+.dropdown-list li a:hover{
+    color: var(--m-t-l-color);
+}
+
+
+
+
+/*flexbox*/
+.display-flex{
+    display: flex;
+}
+
+
+
+
+
+
+
+
+/*on hover events*/
+
+.on-hover-scale:hover{
+    transform: scale(1.2);
+    z-index: 1;
+}
+
+
+
+.highlight-hover:hover{
+    box-shadow: 0 0 6px 0.7px var(--m-t-l-color);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*border classes*/
+
+.rounded-border{
+    border-radius:50%;
+}
+
+
+
+
+
+
+
+
+
+
+
+/*grids*/
+
+.display-grid{
+    display: grid;
+}
+
+.grid-item{
+    height: 50vh;
+    border: 2px solid black;
+}
+
+
+
+
+
+/*Carousel without buttons*/
+
+.carousel{
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+
+.carousel-item{
+    display: inline-block;
+    vertical-align: middle;
+    animation: carouselAnimation 10s linear 0ms infinite alternate;
+    width: 100%;
+    height: 100%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*break points 1000px and 620px*/
+@media  screen and (max-width:1000px) {
+
+    #content{
+        height: 100vh;
+    }
+    #logo-fav{
+        width: 40%;
+    }
+    #search-user{
+        width:50%;
+    }
+    
+    .big-section{
+        height: 200px;
+    }
+    .s-2>div{
+        height: 45%;
+        margin-bottom: 0.3rem;
+    }
+
+    .small-section{
+        height: 100px;
+    }
+
+    h3{
+        font-size: 0.7rem;
+    }
+
+     h4{
+        font-size: 0.6rem;
+    }
+
+    h5{
+        font-size: 0.5rem;
+    }
+    i{
+        font-size: 1rem!important;
+    }
+}
+
+@media  screen and (max-width:620px) {
+    #content{
+        grid-template-columns: 95%;
+    }
+    nav{
+        background-color: var(--m-p-color);
+        padding: 0;
+    }
+    #dot{
+        font-size: 0.6rem!important;
+    }
+
+    #logo-fav{
+        width: 100%;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+    #search-user{
+        width: 100%;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+    .nav-inner{
+        width: 60%;
+        justify-content: center;
+        margin-bottom: 0.5rem;
+    }
+    #content{
+        position: relative;
+        top:17rem;
+    }
+
+    .big-section{
+        height: 100px;
+    }
+
+    .s-2{
+        overflow-y: auto;
+    }
+    .s-2::-webkit-scrollbar{
+        width: 0;
+    }
+    .s-2>div{
+        width: 80%;
+        height: 80px;
+        margin-bottom: 0.3rem;
+    }
+
+    .small-section{
+        height: 80px;
+    }
+
+    h3{
+        font-size: 0.5rem;
+    }
+    
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

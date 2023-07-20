@@ -5,16 +5,296 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <link rel="stylesheet" href="styles.css" />
-    <title>Static Template</title>
+    <link rel="icon" href="../CN_Major_CSS_HTML/resources/Images/nav/logo.jpg">
+    <script src="https://kit.fontawesome.com/33c8a2f948.js" crossorigin="anonymous"></script>
+    <title>Music Player</title>
   </head>
 
   <body>
-    <h1>Welcome Ninja!!</h1>
-    <h3>Write your code here!</h3>
-    <h3>A CSS and JS file has been created and linked for you already.</h3>
-    <h3>Feel free to change the directory structure to your liking.</h3>
-    <h3>Do not delete any .json file from CodeSandbox</h3>
+    <!--Header-->
+    <header>
+      <!--navigation bar-->
+      <nav>
+        <!--logo and favorites-->
+        <div id="logo-fav">
+            <div class="nav-inner">              
+                <figure class="rounded-border">
+                  <img src="../CN_Major_CSS_HTML/resources/Images/nav/logo.jpg" alt="logo" width="100%">
+                </figure>
+              <div id="logo-name">
+                <h3>Manua</h3>
+                <h5>Studio</h5>
+              </div>
+            </div>
+            <!--Favorites-->
+            <div id="favorites" class="nav-inner">
+                <h3>Favorites</h3>
+            </div>
+        </div>
+          
+        <!--search and user-->
+        <div id="search-user">
+          <!--search bar-->
+            <div id="search-input" class="nav-inner">
+              <i class="fa-solid fa-microphone"></i>
+              <input type="text" placeholder="Search Music" class="text-center border-0">
+              <i class="fa-solid fa-magnifying-glass"></i>
+            </div>
+            <!--notification icon-->
+              <div id="notification" class="pointer-cursor">
+                  <i class="fa-solid fa-bell"></i>
+                  <i class="fa-solid fa-circle" id="dot"></i>
+              </div>
+          <!--User-->  
+            <div class="nav-inner">
+              <label for="user" >
+                <figure class="rounded-border pointer-cursor">
+                  <img src="../CN_Major_CSS_HTML/resources/Images/nav/user.jpg" alt="user" width="100%">
+                </figure>
+              </label>
+              <input type="checkbox" id="user" class="dropdown-checkbox">
+              <div class="dropdown-list">
+                
+                  <li><a href="#">Log Out</a></li>
+                  <li><a href="#">Settings</a></li>
+                
+              </div>
+            </div>
+          </div>
+      </nav>
+    </header>
+  
+    <!--main and aside sections-->
+    <div class="display-grid" id="content">
+      <!--main-->
+      <main>
+        <!--sections s-1--a coursel -->
+        <section class="big-section">
+          <div class="carousel">
+            <!--carousel-item-1-->
+            <div class="carousel-item">
+              <div class="display-flex s-1">
+                <div class="pointer-cursor on-hover-scale">
+                  <img src="../CN_Major_CSS_HTML/resources/Images/main/sections-1/p-1.jpg" alt="loading">
+                </div>
+                <div class="pointer-cursor on-hover-scale">
+                  <img src="../CN_Major_CSS_HTML/resources/Images/main/sections-1/p-2.jpg" alt="loading">
+                </div>
+                <div class="pointer-cursor on-hover-scale">
+                  <img src="../CN_Major_CSS_HTML/resources/Images/main/sections-1/p-3.png" alt="loading">
+                </div>
+              </div>
+            </div>
+            <!--carousel-item-2-->
+            <div class="carousel-item">
+              <div class="display-flex s-1">
+                <div class="pointer-cursor on-hover-scale">
+                  <img src="../CN_Major_CSS_HTML/resources/Images/main/sections-1/p-4.jpg" alt="loading">
+                </div>
+                <div class="pointer-cursor on-hover-scale">
+                  <img src="../CN_Major_CSS_HTML/resources/Images/main/sections-1/p-5.jpg" alt="loading">
+                </div>
+                <div class="pointer-cursor on-hover-scale">
+                  <img src="../CN_Major_CSS_HTML/resources/Images/main/sections-1/p-6.jpg" alt="loading">
+                </div>
+              </div>
+            </div>  
+          </div>
+        </section>
+        <!--section s-2- laterst releases-->
+        <section class="big-section">
+          <h3>Latest Releases</h3>
+          <div class="display-flex s-2">
+            <div class="s-2-item display-flex highlight-hover">
+              <div>
+                <img src="../CN_Major_CSS_HTML/resources/Images/main/section-2 latest releases/p-1.jpg" width="100%">
+                <div class="pause center-items hidden position-absolute"><i class="fa-solid fa-pause"></i></div>
+                <div class="play center-items hidden position-absolute"><i class="fa-solid fa-play"></i></div>
+              </div>
+              <div>
+                <h4>The Feels</h4>
+                <h6>JUL 16,2027</h6>
+              </div>
+              <div class="s-2-option">
+                  <label for="song1" class="pointer-cursor">
+                    <h4>...</h4>
+                  </label>
+                  <input type="checkbox" id="song1" class="dropdown-checkbox">
+                  <div class="dropdown-list">
+                  
+                    <li><a href="#"><i class="fa-solid fa-play"></i>&nbsp; Play Now</a></li>
+                    <li><a href="#"><i class="fa-solid fa-plus"></i>&nbsp; Add to Playlist</a></li>
+                    <li><a href="#"><i class="fa-solid fa-heart"></i>&nbsp; Add Favorite</a></li>
+                    <li><a href="#"><i class="fa-solid fa-circle-info"></i>&nbsp; Get Info</a></li>
+                  </div>
+                  <h4>4:44</h4>
+              </div>
+            </div>
+            <div class="s-2-item display-flex highlight-hover">
+              <div>
+                <img src="../CN_Major_CSS_HTML/resources/Images/main/section-2 latest releases/p-1.jpg" width="100%">
+                <div class="pause center-items hidden position-absolute"><i class="fa-solid fa-pause"></i></div>
+                <div class="play center-items hidden position-absolute"><i class="fa-solid fa-play"></i></div>
+              </div>
+             
+              <div>
+                <h4>The Feels</h4>
+                <h6>JUL 16,2027</h6>
+              </div>
+              <div class="s-2-option">
+                  <label for="song2" class="pointer-cursor">
+                    <h4>...</h4>
+                  </label>
+                  <input type="checkbox" id="song2" class="dropdown-checkbox">
+                  <div class="dropdown-list">
+                    <li><a href="#"><i class="fa-solid fa-play"></i>&nbsp; Play Now</a></li>
+                    <li><a href="#"><i class="fa-solid fa-plus"></i>&nbsp; Add to Playlist</a></li>
+                    <li><a href="#"><i class="fa-solid fa-heart"></i>&nbsp; Add Favorite</a></li>
+                    <li><a href="#"><i class="fa-solid fa-circle-info"></i>&nbsp; Get Info</a></li>
+                  </div>
+                  <h4>4:44</h4>
+              </div>
+            </div>
+            <div class="s-2-item display-flex highlight-hover">
+              <div>
+                <img src="../CN_Major_CSS_HTML/resources/Images/main/section-2 latest releases/p-2.jpg" width="100%">
+                <div class="pause center-items hidden position-absolute"><i class="fa-solid fa-pause"></i></div>
+                <div class="play center-items hidden position-absolute"><i class="fa-solid fa-play"></i></div>
+              </div>
+              <div>
+                <h4>Flower</h4>
+                <h6>JUL 16,2027</h6>
+              </div>
+              <div class="s-2-option">
+                  <label for="song3" class="pointer-cursor">
+                    <h4>...</h4>
+                  </label>
+                  <input type="checkbox" id="song3" class="dropdown-checkbox">
+                  <div class="dropdown-list">
+                  
+                    <li><a href="#"><i class="fa-solid fa-play"></i>&nbsp; Play Now</a></li>
+                    <li><a href="#"><i class="fa-solid fa-plus"></i>&nbsp; Add to Playlist</a></li>
+                    <li><a href="#"><i class="fa-solid fa-heart"></i>&nbsp; Add Favorite</a></li>
+                    <li><a href="#"><i class="fa-solid fa-circle-info"></i>&nbsp; Get Info</a></li>
+                  </div>
+                  <h4>4:44</h4>
+              </div>
+            </div>
+            <div class="s-2-item display-flex highlight-hover">
+              <div>
+                <img src="../CN_Major_CSS_HTML/resources/Images/main/section-2 latest releases/p-2.jpg" width="100%">
+                <div class="pause center-items hidden position-absolute"><i class="fa-solid fa-pause"></i></div>
+                <div class="play center-items hidden position-absolute"><i class="fa-solid fa-play"></i></div>
+              </div>
+              <div>
+                <h4>Flower</h4>
+                <h6>JUL 16,2027</h6>
+              </div>
+              <div class="s-2-option">
+                  <label for="song4" class="pointer-cursor">
+                    <h4>...</h4>
+                  </label>
+                  <input type="checkbox" id="song4" class="dropdown-checkbox">
+                  <div class="dropdown-list">
+                  
+                    <li><a href="#"><i class="fa-solid fa-play"></i>&nbsp; Play Now</a></li>
+                    <li><a href="#"><i class="fa-solid fa-plus"></i>&nbsp; Add to Playlist</a></li>
+                    <li><a href="#"><i class="fa-solid fa-heart"></i>&nbsp; Add Favorite</a></li>
+                    <li><a href="#"><i class="fa-solid fa-circle-info"></i>&nbsp; Get Info</a></li>
+                  </div>
+                  <h4>4:44</h4>
+              </div>
+            </div>
+            
+          </div>
+          
+        </section> 
+        <!--section s-3 popular artists-->
+        <section class="small-section">
+          <h3>Popular Artists</h3>
+          <div class="display-flex s-3">
+            <div class="s3-item">
+              <div class="rounded-border">
+                <img src="../CN_Major_CSS_HTML/resources/Images/main/section-3-popular-artists/p-1.jpg" alt="artist" height="100%" width="100%">
+              </div>
+              <h4>Anirudh</h4>
+            </div>
+            <div class="s3-item">
+              <div class="rounded-border">
+                <img src="../CN_Major_CSS_HTML/resources/Images/main/section-3-popular-artists/p-2.jpg" alt="artist" height="100%" width="100%">
+              </div>
+              <h4>DSP</h4>
+            </div>
+            <div class="s3-item">
+              <div class="rounded-border">
+                <img src="../CN_Major_CSS_HTML/resources/Images/main/section-3-popular-artists/p-3.jpg" alt="artist" height="100%" width="100%">
+              </div>
+              <h4>Illayaraja</h4>
+            </div>
+            <div class="s3-item">
+              <div class="rounded-border">
+                <img src="../CN_Major_CSS_HTML/resources/Images/main/section-3-popular-artists/p-4.jpg" alt="artist" height="100%" width="100%">
+              </div>
+              
+              <h4>ArjitSingh</h4>
+            </div>
+            <div class="s3-item">
+              <div class="rounded-border">
+                <img src="../CN_Major_CSS_HTML/resources/Images/main/section-3-popular-artists/p-5.jpg" alt="artist" height="100%" width="100%">
+              </div>
+              <h4>Sid Sriram</h4>
+            </div>
+            <div class="s3-item">
+              <div class="rounded-border">
+                <img src="../CN_Major_CSS_HTML/resources/Images/main/section-3-popular-artists/p-6.jpg" alt="artist" height="100%" width="100%">
+              </div>
+              <h4>U1 Shankar</h4>
+            </div>
+          </div>
+        </section>
+        <!--section s-4  music stations-->
+        <section class="small-section">
+          <div class="display-flex s-4">
+            <div id="s-4-cards" class="center-items">
+              <div id="div1"></div>
+              <div id="div2"></div>
+              <div id="div3"></div>
+              <div><i class="fa-solid fa-radio"></i>
+              <h5>Stations</h5></div>
+            </div>
+            <div id="s-4-station" class="display-flex">
+              <div class="center-items">
+                <img src="../CN_Major_CSS_HTML/resources/Images/main/section-4-stations/love.jpg" width="100%" height="100%">
+                <div class="station center-items"><h3>Love</h3></div>
+              </div>
+              <div class="center-items">
+                <img src="../CN_Major_CSS_HTML/resources/Images/main/section-4-stations/gaming.jpg" width="100%" height="100%">
+                <div class="station center-items"><h3>Gaming</h3></div>
+              </div>
+              <div class="center-items">
+                <img src="../CN_Major_CSS_HTML/resources/Images/main/section-4-stations/pop.jpg" width="100%" height="100%">
+                <div class="station center-items"><h3>K-pop</h3></div>
+              </div>
+              <div class="center-items">
+                <img src="../CN_Major_CSS_HTML/resources/Images/main/section-4-stations/retro.jpg" width="100%" height="100%">
+                <div class="station center-items"><h3>Retro</h3></div>
+              </div>
+              <div class="center-items">
+                <img src="../CN_Major_CSS_HTML/resources/Images/main/section-4-stations/rock.jpg" width="100%" height="100%">
+                <div class="station center-items"><h3>Rock</h3></div>
+              </div>
+              <div class="center-items">
+                <img src="../CN_Major_CSS_HTML/resources/Images/main/section-4-stations/workout.jpg" width="100%" height="100%">
+                <div class="station center-items"><h3>workout</h3></div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </main>
+      <!--gap between main and aside-->
+      <div></div>
+      <!--aside section-->
+      <aside></aside>
+    </div>
   </body>
-
-  <script src="script.js"></script>
 </html>
