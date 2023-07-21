@@ -12,7 +12,7 @@
     width: 0;
 }
 
-h1,h2,h3,h4,h5,h6{
+h1,h2,h3,h4,h5,h6,p{
     margin: 0;
 }
 div{
@@ -57,7 +57,7 @@ i{
     height: 200px;
     width: 100%;
     margin-bottom: 1.5rem;
-    border: 3px solid black;
+    /* border: 3px solid black; */
 }
 
 .small-section h3{
@@ -222,10 +222,14 @@ input:focus{
     box-sizing: border-box;
     top: 8rem;
     min-width: 300px;
-    overflow-y: auto;
-    height: auto;
 }
 
+
+
+main{
+    height: 80vh;
+    overflow-y: auto;
+}
 
 
 /*sections of the main starts here*/
@@ -473,14 +477,167 @@ input:focus{
 /*section s-5 music type*/
 
 
+.s-5{
+    width: 100%;
+    height: 100%;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.s-5-item{
+    overflow: hidden;
+    width: 28%;
+    height: 70%;
+    /* border: 1px solid white; */
+}
+
+.s-5-item>div{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+
+.s-5 img{
+    opacity: 0.8;
+}
+
+.s-5-item:hover{
+    cursor: pointer;
+}
+
+.s-5-item:hover img{
+    transform: scale(1.4);
+}
 
 
 
 
 
 
+/*section s6 and s7 language types*/
 
 
+.s-6-section{
+    height: 210px;
+}
+.s-6{
+    height: 90%;
+    /* border: 2px solid white; */
+    align-items: center;
+    justify-content: space-around;
+}
+
+
+.s-6-item{
+    height: 100%;
+    width: 15%;
+    /* border: 2px solid red; */
+}
+
+.s-6-image{
+    width: 100%;
+    height: 70%;
+    /* border: 2px solid white; */
+}
+
+
+
+
+
+/*main ends here*/
+
+
+/*aside starts here*/
+
+#aside-bar{
+    height: 80vh;
+    width: 99%;
+    /* border: 2px solid white; */
+    position: relative;
+    overflow-y: auto;
+}
+
+
+.queue-heading{
+    position: sticky;
+    top: 0;
+    width: 100%;
+    height: 80px;
+    background-image: linear-gradient(black 70px,transparent);
+    justify-content:space-between;
+    align-items: center;
+    box-sizing: border-box;
+    padding-left: 0.3rem;
+    padding-right: 0.6rem;
+    z-index: 1;
+}
+
+.queue-heading span{
+    color: var(--m-t-color);
+    font-weight: 600;
+}
+
+.queue-heading .dropdown-list{
+    width: 10rem;
+    right: 1rem;
+    top:0.5rem;
+    text-align: center;
+}
+
+
+
+
+/*song container in Queue*/
+
+#songs-container{
+    width: 95%;
+    margin: auto;
+}
+
+.music-item{
+    height: 85px;
+    /* border: 2px solid white; */
+    position: relative;
+    box-shadow: 0 0 4px 0.2px black;
+    margin-bottom: 0.3rem;
+}
+
+.music-item>div{
+    height: 100%;
+    align-items: center;
+}
+
+.music-left{
+    align-items: center;
+    justify-content: space-around;
+    width: 65%;
+}
+.music-left>p{
+    width: 10%;
+}
+
+.music-image{
+    width: 25%;
+    height: 65%;
+    max-width: 50px;
+}
+
+.music-des{
+    width: 50%;
+    
+}
+
+.music-right>div{
+    width: 100%;
+}
+.music-right{
+    align-items: center;
+    justify-content: flex-end;
+    width: 30%;
+}
+
+
+/*aside ends here*/
 
 
 
@@ -499,6 +656,15 @@ input:focus{
 
 
 /*self-created classes*/
+
+
+
+
+/*positions*/
+
+.position-absolute{
+    position: absolute;
+}
 
 
 /*Dropdown lists*/
@@ -569,9 +735,9 @@ input:focus{
 }
 
 
-
-
-
+.on-hover-color{
+    color: red;
+}
 
 
 
@@ -647,9 +813,7 @@ input:focus{
 /*break points 1000px and 620px*/
 @media  screen and (max-width:1000px) {
 
-    #content{
-        height: 100vh;
-    }
+   
     #logo-fav{
         width: 40%;
     }
@@ -680,8 +844,20 @@ input:focus{
     h5{
         font-size: 0.5rem;
     }
+    h6{
+        font-size: 0.4rem;
+    }
+    p{
+        font-size: 0.7rem;
+    }
+    .music-item{
+        height: 75px;
+    }
     i{
         font-size: 1rem!important;
+    }
+    #dot{
+        font-size: 0.5rem!important;
     }
 }
 
