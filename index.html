@@ -977,7 +977,74 @@
 
     <!--footer section music player-->
     <footer>
-      <div></div>
+      <div id="player" class="display-flex">
+        <div class="player-item" id="pt-1">
+          <div>
+            <img src="../CN_Major_CSS_HTML/resources/Images/main/section-2 latest releases/p-1.jpg" alt="image" height="100%" width="100%">
+          </div>
+          <div >
+            <marquee behavior="scroll" direction="right">
+              <h3>TWICE album</h3>
+              <p>The Feels</p>
+            </marquee>
+          </div>
+          <div class="display-flex" id="player-fav">
+            <i class="fa-solid fa-heart"></i>
+            <i class="fa-solid fa-ellipsis"></i>
+          </div>
+        </div>
+        <div class="player-item display-flex" id="pt-2">
+          <div id="pt-2-item-1" class="display-flex">
+            <div class="center-items">
+              <h4>0:00</h4>
+            </div>
+            <div class="player-bar">
+              <div class="player-line"></div>
+              <div class="player-seek">
+                <div></div>
+              </div>
+            </div>
+            <div class="center-items">
+              <h4>1:43</h4>
+            </div>
+          </div>
+          <div id="pt-2-item-2" class="display-flex">
+            <div class="center-items carousel on-hover-color">
+              <i class="fa-solid fa-shuffle"></i>
+            </div>
+            <div class="display-flex player-btn">
+              <div class="center-items on-hover-color"><i class="fa-solid fa-backward-step"></i></div>
+              <div class="center-items on-hover-color" ><i class="fa-regular fa-circle-pause" style="font-size: 1.5rem!important;"></i></div>
+              <div class="center-items on-hover-color"><i class="fa-solid fa-forward-step"></i></div>
+            </div>
+            <div class="center-items pointer-cursor on-hover-color">
+              <i class="fa-solid fa-repeat"></i>
+            </div>
+          </div>
+        </div>
+        <div class="player-item display-flex" id="pt-3"> 
+          <div class="center-items on-hover-color">
+            <i class="fa-solid fa-icons"></i>
+          </div>
+          <div class="center-items on-hover-color">
+            <i class="fa-solid fa-computer"></i>
+          </div>
+          <div id="volume">
+            <div class="center-items">
+              <i class="fa-solid fa-volume-high"></i>
+            </div>
+            <div style="flex-grow: 1;">
+              <div class="player-line"></div>
+              <div class="player-seek">
+                <div></div>
+              </div>
+            </div>
+          </div>
+          <div class="center-items">
+            <i class="fa-solid fa-up-right-and-down-left-from-center"></i>
+          </div>
+        </div>
+      </div>
     </footer>
   </body>
 </html>
