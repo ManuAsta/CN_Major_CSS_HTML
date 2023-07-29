@@ -292,15 +292,8 @@ main{
 
 
 
-.s-2-item>div:first-child:active .pause{
-    display: flex;
-    z-index: 1;
-}
 
-.s-2-item>div:first-child:active .play{
-    display: flex;
-    z-index: -1;
-}
+
 
 
 
@@ -359,6 +352,20 @@ main{
 .s-2-item>div:first-child:hover .play{
     display: flex;
 }
+
+.s-2-item>div:first-child:active .pause{
+    display: flex;
+}
+
+.s-2-item>div:first-child:active .play{
+    color: transparent;
+}
+
+
+
+
+
+
 
 
 
@@ -651,15 +658,18 @@ main{
 
 
 
-#player{
+.player{
     /* border: 2px solid white; */
-    height: 100px;
+    height: 90px;
     position: fixed;
-    width: 100%;
+    width: 100vw;
     bottom: 0;
+    left: 0;
     justify-content: space-around;
     background-color: var(--m-p-color);
+    /* transition: all 0.2s ease-in-out; */
     min-width: 320px;
+    z-index: 1;
 }
 
 .player-item{
@@ -669,28 +679,28 @@ main{
 }
 
 .player-item:nth-child(odd){
-    width: 25%;
+    width: 20%;
 }
 
 .player-item:nth-child(even){
-    width: 45%;
+    width: 40%;
 }
 
-#pt-1{
+.pt-1{
     justify-content: space-around;
 }
 
-#pt-1>div{
+.pt-1>div{
     width: 30%;
     /* border: 3px solid cyan; */
     height: 100%;
 }
 
-#pt-1>div:nth-child(2){
+.pt-1>div:nth-child(2){
     width: 40%;
 }
 
-#pt-1>div:nth-child(3){
+.pt-1>div:nth-child(3){
     width: 20%;
 }
 
@@ -701,7 +711,7 @@ marquee>h3{
     margin-bottom: 1rem;
 }
 
-#player-fav{
+.player-fav{
     justify-content: space-around;
     align-items: center;
 }
@@ -711,21 +721,21 @@ marquee>h3{
 
 /*the middle player part*/
 
-#pt-2{
+.pt-2{
     flex-direction: column;
     justify-content: space-around;
     align-items: center;
-    border-left:2px solid var(--m-t-l-color);
-    box-shadow: 0 0 3px 2px var(--m-t-l-color);
+    /* border-left:2px solid var(--m-t-l-color); */
+    box-shadow: 0 0 3px 2px var(--m-p-color);
 }
 
-#pt-2-item-1{
+.pt-2-item-1{
     width: 100%;
     /* border:2px solid orange; */
     height:40%;
 }
 
-#pt-2-item-2{
+.pt-2-item-2{
     width:70%;
     height: 50%;
     /* border: 2px solid white; */
@@ -733,18 +743,18 @@ marquee>h3{
     
 }
 
-#pt-2-item-2{
+.pt-2-item-2{
     font-size: 1rem;
 }
 
 
-#pt-2-item-1>div:nth-child(odd){
+.pt-2-item-1>div:nth-child(odd){
     height: 100%;
     width: 10%;
     /* border:2px pink solid; */
 }
 
-#pt-2-item-1>div:nth-child(even){
+.pt-2-item-1>div:nth-child(even){
     height: 100%;
     width: 80%;
     /* border:2px rgb(49, 90, 193) solid; */
@@ -783,13 +793,13 @@ marquee>h3{
     cursor: pointer;
 }
 
-#pt-2-item-2>div:nth-child(odd){
+.pt-2-item-2>div:nth-child(odd){
     height: 100%;
     width: 10%;
     /* border: 2px solid orange; */
 }
 
-#pt-2-item-2>div:nth-child(even){
+.pt-2-item-2>div:nth-child(even){
     height: 100%;
     width: 70%;
     /* border: 2px solid orange; */
@@ -798,14 +808,14 @@ marquee>h3{
     justify-content: space-around;
 }
 
-#pt-2-item-2>div:nth-child(even)>div{
+.pt-2-item-2>div:nth-child(even)>div{
     height: 100%;
     width: 30%;
     /* border: 2px solid rgb(0, 255, 68); */
 }
 
 
-#pt-3>div{
+.pt-3>div{
     height: 100%;
     display: flex;
     width: 15%;
@@ -813,13 +823,13 @@ marquee>h3{
     /* border: 2px solid white; */
 }
 
-#volume{
+.volume{
     flex-grow: 1;
 }
 
 
 
-#volume>div{
+.volume>div{
     display: flex;
     width: 20%;
     height: 100%;
@@ -829,7 +839,42 @@ marquee>h3{
 
 
 
-/*player ends here             */
+/*player ends here   */
+
+
+
+/*player visibility checkbox*/
+
+
+
+
+.player-btn{
+    display: flex;
+    height: 100%;
+    align-items: center;
+    width: 100%;
+    justify-content: center;
+}
+
+
+.player-checkbox{
+    display: none;
+}
+.player{
+    display: none;
+}
+
+.player-checkbox:checked+.player{
+    display: flex;
+}
+
+
+
+
+
+
+
+
 
 
 
@@ -998,6 +1043,16 @@ marquee>h3{
 
 
 
+
+
+
+
+
+
+
+
+
+
 /*break points 1000px and 620px*/
 @media  screen and (max-width:1000px) {
 
@@ -1047,7 +1102,7 @@ marquee>h3{
     #dot{
         font-size: 0.5rem!important;
     }
-    #player{
+    .player{
         height: 60px;
     }
 }
@@ -1107,15 +1162,15 @@ marquee>h3{
     h3{
         font-size: 0.5rem;
     }
-     #player{
+     .player{
         height: 40px;
     }
-    #player-fav{
+    .player-fav{
         flex-direction: column;
         justify-content: center;
         align-items: baseline;
     }
-    #player i{
+    .player i{
         font-size: 0.5rem!important;
     }
 }
