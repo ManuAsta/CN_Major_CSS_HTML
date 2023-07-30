@@ -1,680 +1,825 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" href="../CN_Major_CSS_HTML/resources/Images/nav/logo.jpg">
-    <link rel="stylesheet" href="artists.css">
-    <script src="https://kit.fontawesome.com/33c8a2f948.js" crossorigin="anonymous"></script>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="resources/Images/nav/logo.jpg" />
+    <link rel="stylesheet" href="artists.css" />
+    <script
+      src="https://kit.fontawesome.com/33c8a2f948.js"
+      crossorigin="anonymous"
+    ></script>
     <title>Artists</title>
-</head>
-<body>
+  </head>
+  <body>
     <!--Header-->
     <header>
-        <!--navigation bar-->
-        <nav>
-          <!--logo and favorites-->
-          <div id="logo-fav">
-              <div class="nav-inner">              
-                  <figure class="rounded-border">
-                    <img src="../CN_Major_CSS_HTML/resources/Images/nav/logo.jpg" alt="logo" width="100%">
-                  </figure>
-                <div id="logo-name">
-                  <h3>Manua</h3>
-                  <h5>Studio</h5>
-                </div>
-              </div>
-              <!--Favorites-->
-              <div id="favorites" class="nav-inner">
-                  <h3>Favorites</h3>
-              </div>
-          </div>
-            
-          <!--search and user-->
-          <div id="search-user">
-            <!--search bar-->
-              <div id="search-input" class="nav-inner">
-                <i class="fa-solid fa-microphone"></i>
-                <input type="text" placeholder="Search Music" class="text-center border-0">
-                <i class="fa-solid fa-magnifying-glass"></i>
-              </div>
-              <!--notification icon-->
-                <div id="notification" class="pointer-cursor">
-                    <i class="fa-solid fa-bell"></i>
-                    <i class="fa-solid fa-circle" id="dot"></i>
-                </div>
-            <!--User-->  
-              <div class="nav-inner">
-                <label for="user" >
-                  <figure class="rounded-border pointer-cursor">
-                    <img src="../CN_Major_CSS_HTML/resources/Images/nav/user.jpg" alt="user" width="100%">
-                  </figure>
-                </label>
-                <input type="checkbox" id="user" class="dropdown-checkbox">
-                <div class="dropdown-list">
-                  
-                    <li><a href="#">Log Out</a></li>
-                    <li><a href="#">Settings</a></li>
-                  
-                </div>
-              </div>
+      <!--navigation bar-->
+      <nav>
+        <!--logo and favorites-->
+        <div id="logo-fav">
+          <div class="nav-inner">
+            <figure class="rounded-border">
+              <img
+                src="resources/Images/nav/logo.jpg"
+                alt="logo"
+                width="100%"
+              />
+            </figure>
+            <div id="logo-name">
+              <h3>Manua</h3>
+              <h5>Studio</h5>
             </div>
-        </nav>
-      </header>
-<!--main and aside-->
+          </div>
+          <!--Favorites-->
+          <div id="favorites" class="nav-inner">
+            <h3>Favorites</h3>
+          </div>
+        </div>
+
+        <!--search and user-->
+        <div id="search-user">
+          <!--search bar-->
+          <div id="search-input" class="nav-inner">
+            <i class="fa-solid fa-microphone"></i>
+            <input
+              type="text"
+              placeholder="Search Music"
+              class="text-center border-0"
+            />
+            <i class="fa-solid fa-magnifying-glass"></i>
+          </div>
+          <!--notification icon-->
+          <div id="notification" class="pointer-cursor">
+            <i class="fa-solid fa-bell"></i>
+            <i class="fa-solid fa-circle" id="dot"></i>
+          </div>
+          <!--User-->
+          <div class="nav-inner">
+            <label for="user">
+              <figure class="rounded-border pointer-cursor">
+                <img
+                  src="resources/Images/nav/User.jpg"
+                  alt="user"
+                  width="100%"
+                />
+              </figure>
+            </label>
+            <input type="checkbox" id="user" class="dropdown-checkbox" />
+            <div class="dropdown-list">
+              <li><a href="#">Log Out</a></li>
+              <li><a href="#">Settings</a></li>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <!--main and aside-->
     <div id="content" class="grid">
-        <div class="grid-item" >
-          <div class="grid-box" id="artist-box">
-            <div class="artist-box-item">
-                <img src="../CN_Major_CSS_HTML/resources/Images/main/section-3-popular-artists/p-1.jpg" alt="artist" height="100%" width="100%">
+      <div class="grid-item">
+        <div class="grid-box" id="artist-box">
+          <div class="artist-box-item">
+            <img
+              src="resources/Images/main/section-3-popular-artists/p-1.jpg"
+              alt="artist"
+              height="100%"
+              width="100%"
+            />
+          </div>
+          <div class="artist-box-item scroll-overflow">
+            <div class="space-between mb-point5">
+              <h2>Anirudh Juke Box</h2>
+              <h6>851 Followers</h6>
             </div>
-            <div class="artist-box-item scroll-overflow">
-                <div class="space-between mb-point5">
-                    <h2>Anirudh Juke Box</h2>
-                    <h6>851 Followers</h6>
-                </div>
-                <div class="mb-point5">
-                    <button class="mr-1">Play all</button>
-                    <span class="f-bold">Follow</span>
-                </div>
-                <div class="mb-1">
-                    <h6 class="mb-point5">Tamil Playlist</h6>
-                    <p class="fs-smallest">Our playlist Anirudh Ravichander features a diverse collection of songs in mp3 format, ready for you to download and enjoy without any charges or FREE of cost. With a mix of old favourites and new hits, there's something for everyone. Whether you're looking for the latest chartbuster songs or some classic tracks, our Anirudh Ravichander playlist has got you covered.</p>
-                </div>
-               
-                <div>
-                    <p class="fs-smallest f-bold">247 tracks| 143 Albums</p>
-                </div>
+            <div class="mb-point5">
+              <button class="mr-1">Play all</button>
+              <span class="f-bold">Follow</span>
+            </div>
+            <div class="mb-1">
+              <h6 class="mb-point5">Tamil Playlist</h6>
+              <p class="fs-smallest">
+                Our playlist Anirudh Ravichander features a diverse collection
+                of songs in mp3 format, ready for you to download and enjoy
+                without any charges or FREE of cost. With a mix of old
+                favourites and new hits, there's something for everyone. Whether
+                you're looking for the latest chartbuster songs or some classic
+                tracks, our Anirudh Ravichander playlist has got you covered.
+              </p>
+            </div>
+
+            <div>
+              <p class="fs-smallest f-bold">247 tracks| 143 Albums</p>
             </div>
           </div>
         </div>
-        <div class="grid-item" >
-           <div class="grid-box scroll-overflow" id="similar-artists">
-             <div class="space-between box-heading">
-                <h2>Similar Artists</h2>
-                <p class="fs-smallest">View All</p>
-             </div>
-             <div>
-                <div class="space-between s-a-item ">
-                    <div class="info">
-                        <div class="mr-1">
-                            <img src="../CN_Major_CSS_HTML/resources/Images/main/section-3-popular-artists/p-2.jpg" alt="artist" width="100%" height="100%">
-                        </div>
-                        <div class="flex-column">
-                            <h5 class="mb-point5">Devi Sri Prasad</h5>
-                            <p class="fs-smallest">telugu artist</p>
-                        </div>
-                    </div>
-                    <div class="options">
-                        <span class="mb-point5"><i class="fa-solid fa-ellipsis"></i></span>
-                        <p class="fs-smallest">4:44</p>
-                    </div>
+      </div>
+      <div class="grid-item">
+        <div class="grid-box scroll-overflow" id="similar-artists">
+          <div class="space-between box-heading">
+            <h2>Similar Artists</h2>
+            <p class="fs-smallest">View All</p>
+          </div>
+          <div>
+            <div class="space-between s-a-item">
+              <div class="info">
+                <div class="mr-1">
+                  <img
+                    src="resources/Images/main/section-3-popular-artists/p-2.jpg"
+                    alt="artist"
+                    width="100%"
+                    height="100%"
+                  />
                 </div>
-                <div class="space-between s-a-item ">
-                    <div class="info">
-                        <div class="mr-1">
-                            <img src="../CN_Major_CSS_HTML/resources/Images/main/section-3-popular-artists/p-6.jpg" alt="artist" width="100%" height="100%">
-                        </div>
-                        <div class="flex-column">
-                            <h5 class="mb-point5">Devi Sri Prasad</h5>
-                            <p class="fs-smallest">telugu artist</p>
-                        </div>
-                    </div>
-                    <div class="options">
-                        <span class="mb-point5"><i class="fa-solid fa-ellipsis"></i></span>
-                        <p class="fs-smallest">4:44</p>
-                    </div>
+                <div class="flex-column">
+                  <h5 class="mb-point5">Devi Sri Prasad</h5>
+                  <p class="fs-smallest">telugu artist</p>
                 </div>
-                <div class="space-between s-a-item ">
-                    <div class="info">
-                        <div class="mr-1">
-                            <img src="../CN_Major_CSS_HTML/resources/Images/main/section-3-popular-artists/p-1.jpg" alt="artist" width="100%" height="100%">
-                        </div>
-                        <div class="flex-column">
-                            <h5 class="mb-point5">Devi Sri Prasad</h5>
-                            <p class="fs-smallest">telugu artist</p>
-                        </div>
-                    </div>
-                    <div class="options">
-                        <span class="mb-point5"><i class="fa-solid fa-ellipsis"></i></span>
-                        <p class="fs-smallest">4:44</p>
-                    </div>
-                </div>
-                <div class="space-between s-a-item ">
-                    <div class="info">
-                        <div class="mr-1">
-                            <img src="../CN_Major_CSS_HTML/resources/Images/main/section-3-popular-artists/p-3.jpg" alt="artist" width="100%" height="100%">
-                        </div>
-                        <div class="flex-column">
-                            <h5 class="mb-point5">Devi Sri Prasad</h5>
-                            <p class="fs-smallest">telugu artist</p>
-                        </div>
-                    </div>
-                    <div class="options">
-                        <span class="mb-point5"><i class="fa-solid fa-ellipsis"></i></span>
-                        <p class="fs-smallest">4:44</p>
-                    </div>
-                </div>
-                <div class="space-between s-a-item ">
-                    <div class="info">
-                        <div class="mr-1">
-                            <img src="../CN_Major_CSS_HTML/resources/Images/main/section-3-popular-artists/p-4.jpg" alt="artist" width="100%" height="100%">
-                        </div>
-                        <div class="flex-column">
-                            <h5 class="mb-point5">Devi Sri Prasad</h5>
-                            <p class="fs-smallest">telugu artist</p>
-                        </div>
-                    </div>
-                    <div class="options">
-                        <span class="mb-point5"><i class="fa-solid fa-ellipsis"></i></span>
-                        <p class="fs-smallest">4:44</p>
-                    </div>
-                </div>
-                <div class="space-between s-a-item ">
-                    <div class="info">
-                        <div class="mr-1">
-                            <img src="../CN_Major_CSS_HTML/resources/Images/main/section-3-popular-artists/p-2.jpg" alt="artist" width="100%" height="100%">
-                        </div>
-                        <div class="flex-column">
-                            <h5 class="mb-point5">Devi Sri Prasad</h5>
-                            <p class="fs-smallest">telugu artist</p>
-                        </div>
-                    </div>
-                    <div class="options">
-                        <span class="mb-point5"><i class="fa-solid fa-ellipsis"></i></span>
-                        <p class="fs-smallest">4:44</p>
-                    </div>
-                </div>
-             </div>
-           </div>
-        </div> 
-        <div class="grid-item">
-            <div class="grid-box scroll-overflow" id="playlist">
-                <div class="songs-container ">
-                    <div class="music-item display-flex highlight-hover">
-                        <div class="display-flex music-left">
-                          <p>01</p>
-                          <div class="music-image mr-1">
-                            <img src="../CN_Major_CSS_HTML/resources/Images/main/section-2 latest releases/p-1.jpg" alt="queue-songs" width="100%" height="100%">
-                          </div>
-                          <div class="music-des">
-                            <h4>Alcohol Free</h4>
-                            <p class="fs-smallest">TWICE</p>
-                          </div>
-                        </div>
-                        <div class="display-flex music-right">
-                             
-                            <span class="mr-1"> <i class="fa-solid fa-heart "></i></span>
-                            <span><i class="fa-solid fa-plus mr-1"></i></span>
-                            <span>4:44</span>
-                          
-                        </div>
-                    </div>  
-                      <div class="music-item display-flex highlight-hover">
-                        <div class="display-flex music-left">
-                          <p>02</p>
-                          <div class="music-image mr-1">
-                            <img src="../CN_Major_CSS_HTML/resources/Images/main/section-2 latest releases/p-4.jpg" alt="queue-songs" width="100%" height="100%">
-                          </div>
-                          <div class="music-des">
-                            <h4>Alcohol Free</h4>
-                            <p class="fs-smallest">TWICE</p>
-                          </div>
-                        </div>
-                        <div class="display-flex music-right">
-                             
-                            <span class="mr-1"> <i class="fa-solid fa-heart "></i></span>
-                            <span><i class="fa-solid fa-plus mr-1"></i></span>
-                            <span>4:44</span>
-                          
-                        </div>
-                      </div>  
-                      <div class="music-item display-flex highlight-hover">
-                        <div class="display-flex music-left">
-                          <p>03</p>
-                          <div class="music-image mr-1">
-                            <img src="../CN_Major_CSS_HTML/resources/Images/main/section-2 latest releases/p-2.jpg" alt="queue-songs" width="100%" height="100%">
-                          </div>
-                          <div class="music-des">
-                            <h4>Alcohol Free</h4>
-                            <p class="fs-smallest">TWICE</p>
-                          </div>
-                        </div>
-                        <div class="display-flex music-right">
-                             
-                            <span class="mr-1"> <i class="fa-solid fa-heart "></i></span>
-                            <span><i class="fa-solid fa-plus mr-1"></i></span>
-                            <span>4:44</span>
-                          
-                        </div>
-                      </div>  
-                      <div class="music-item display-flex highlight-hover">
-                        <div class="display-flex music-left">
-                          <p>04</p>
-                          <div class="music-image mr-1">
-                            <img src="../CN_Major_CSS_HTML/resources/Images/main/section-2 latest releases/p-3.jpg" alt="queue-songs" width="100%" height="100%">
-                          </div>
-                          <div class="music-des">
-                            <h4>Alcohol Free</h4>
-                            <p class="fs-smallest">TWICE</p>
-                          </div>
-                        </div>
-                        <div class="display-flex music-right">
-                             
-                            <span class="mr-1"> <i class="fa-solid fa-heart "></i></span>
-                            <span><i class="fa-solid fa-plus mr-1"></i></span>
-                            <span>4:44</span>
-                          
-                        </div>
-                      </div>  
-                      <div class="music-item display-flex highlight-hover">
-                        <div class="display-flex music-left">
-                          <p>05</p>
-                          <div class="music-image mr-1">
-                            <img src="../CN_Major_CSS_HTML/resources/Images/main/section-2 latest releases/p-2.jpg" alt="queue-songs" width="100%" height="100%">
-                          </div>
-                          <div class="music-des">
-                            <h4>Alcohol Free</h4>
-                            <p class="fs-smallest">TWICE</p>
-                          </div>
-                        </div>
-                        <div class="display-flex music-right">
-                             
-                            <span class="mr-1"> <i class="fa-solid fa-heart "></i></span>
-                            <span><i class="fa-solid fa-plus mr-1"></i></span>
-                            <span>4:44</span>
-                          
-                        </div>
-                      </div>     
-                      <div class="music-item display-flex highlight-hover">
-                        <div class="display-flex music-left">
-                          <p>01</p>
-                          <div class="music-image mr-1">
-                            <img src="../CN_Major_CSS_HTML/resources/Images/main/section-2 latest releases/p-1.jpg" alt="queue-songs" width="100%" height="100%">
-                          </div>
-                          <div class="music-des">
-                            <h4>Alcohol Free</h4>
-                            <p class="fs-smallest">TWICE</p>
-                          </div>
-                        </div>
-                        <div class="display-flex music-right">
-                             
-                            <span class="mr-1"> <i class="fa-solid fa-heart "></i></span>
-                            <span><i class="fa-solid fa-plus mr-1"></i></span>
-                            <span>4:44</span>
-                          
-                        </div>
-                      </div>  
-                      <div class="music-item display-flex highlight-hover">
-                        <div class="display-flex music-left">
-                          <p>01</p>
-                          <div class="music-image mr-1">
-                            <img src="../CN_Major_CSS_HTML/resources/Images/main/section-2 latest releases/p-1.jpg" alt="queue-songs" width="100%" height="100%">
-                          </div>
-                          <div class="music-des">
-                            <h4>Alcohol Free</h4>
-                            <p class="fs-smallest">TWICE</p>
-                          </div>
-                        </div>
-                        <div class="display-flex music-right">
-                             
-                            <span class="mr-1"> <i class="fa-solid fa-heart "></i></span>
-                            <span><i class="fa-solid fa-plus mr-1"></i></span>
-                            <span>4:44</span>
-                          
-                        </div>
-                      </div>  
-                      <div class="music-item display-flex highlight-hover">
-                        <div class="display-flex music-left">
-                          <p>01</p>
-                          <div class="music-image mr-1">
-                            <img src="../CN_Major_CSS_HTML/resources/Images/main/section-2 latest releases/p-1.jpg" alt="queue-songs" width="100%" height="100%">
-                          </div>
-                          <div class="music-des">
-                            <h4>Alcohol Free</h4>
-                            <p class="fs-smallest">TWICE</p>
-                          </div>
-                        </div>
-                        <div class="display-flex music-right">
-                             
-                            <span class="mr-1"> <i class="fa-solid fa-heart "></i></span>
-                            <span><i class="fa-solid fa-plus mr-1"></i></span>
-                            <span>4:44</span>
-                          
-                        </div>
-                      </div>  
-                      <div class="music-item display-flex highlight-hover">
-                        <div class="display-flex music-left">
-                          <p>01</p>
-                          <div class="music-image mr-1">
-                            <img src="../CN_Major_CSS_HTML/resources/Images/main/section-2 latest releases/p-1.jpg" alt="queue-songs" width="100%" height="100%">
-                          </div>
-                          <div class="music-des">
-                            <h4>Alcohol Free</h4>
-                            <p class="fs-smallest">TWICE</p>
-                          </div>
-                        </div>
-                        <div class="display-flex music-right">
-                             
-                            <span class="mr-1"> <i class="fa-solid fa-heart "></i></span>
-                            <span><i class="fa-solid fa-plus mr-1"></i></span>
-                            <span>4:44</span>
-                          
-                        </div>
-                      </div>  
-                      <div class="music-item display-flex highlight-hover">
-                        <div class="display-flex music-left">
-                          <p>01</p>
-                          <div class="music-image mr-1">
-                            <img src="../CN_Major_CSS_HTML/resources/Images/main/section-2 latest releases/p-1.jpg" alt="queue-songs" width="100%" height="100%">
-                          </div>
-                          <div class="music-des">
-                            <h4>Alcohol Free</h4>
-                            <p class="fs-smallest">TWICE</p>
-                          </div>
-                        </div>
-                        <div class="display-flex music-right">
-                             
-                            <span class="mr-1"> <i class="fa-solid fa-heart "></i></span>
-                            <span><i class="fa-solid fa-plus mr-1"></i></span>
-                            <span>4:44</span>
-                          
-                        </div>
-                      </div>  
-                      <div class="music-item display-flex highlight-hover">
-                        <div class="display-flex music-left">
-                          <p>01</p>
-                          <div class="music-image mr-1">
-                            <img src="../CN_Major_CSS_HTML/resources/Images/main/section-2 latest releases/p-1.jpg" alt="queue-songs" width="100%" height="100%">
-                          </div>
-                          <div class="music-des">
-                            <h4>Alcohol Free</h4>
-                            <p class="fs-smallest">TWICE</p>
-                          </div>
-                        </div>
-                        <div class="display-flex music-right">
-                             
-                            <span class="mr-1"> <i class="fa-solid fa-heart "></i></span>
-                            <span><i class="fa-solid fa-plus mr-1"></i></span>
-                            <span>4:44</span>
-                          
-                        </div>
-                      </div>  
-                      <div class="music-item display-flex highlight-hover">
-                        <div class="display-flex music-left">
-                          <p>01</p>
-                          <div class="music-image mr-1">
-                            <img src="../CN_Major_CSS_HTML/resources/Images/main/section-2 latest releases/p-1.jpg" alt="queue-songs" width="100%" height="100%">
-                          </div>
-                          <div class="music-des">
-                            <h4>Alcohol Free</h4>
-                            <p class="fs-smallest">TWICE</p>
-                          </div>
-                        </div>
-                        <div class="display-flex music-right">
-                             
-                            <span class="mr-1"> <i class="fa-solid fa-heart "></i></span>
-                            <span><i class="fa-solid fa-plus mr-1"></i></span>
-                            <span>4:44</span>
-                          
-                        </div>
-                      </div>  
-                </div>
-               
+              </div>
+              <div class="options">
+                <span class="mb-point5"
+                  ><i class="fa-solid fa-ellipsis"></i
+                ></span>
+                <p class="fs-smallest">4:44</p>
+              </div>
             </div>
-        </div>
-        <div class="grid-item">
-            <div class="grid-box scroll-overflow" id="recently-played">
-                <div class="space-between box-heading">
-                    <h2>Recently Played</h2>
-                    <p class="fs-smallest">View All</p>
-                 </div>
-                 <div>
-                    <div class="music-item display-flex highlight-hover">
-                        <div class="display-flex music-left">
-                          <p>01</p>
-                          <div class="music-image mr-1">
-                            <img src="../CN_Major_CSS_HTML/resources/Images/main/section-2 latest releases/p-1.jpg" alt="queue-songs" width="100%" height="100%">
-                          </div>
-                          <div class="music-des">
-                            <h4>Alcohol Free</h4>
-                            <p class="fs-smallest">TWICE</p>
-                          </div>
-                        </div>
-                        <div class="display-flex music-right">
-                             
-                            <span class="mr-1"> <i class="fa-solid fa-heart "></i></span>
-                          
-                        </div>
-                    </div> 
-                    <div class="music-item display-flex highlight-hover">
-                        <div class="display-flex music-left">
-                          <p>02</p>
-                          <div class="music-image mr-1">
-                            <img src="../CN_Major_CSS_HTML/resources/Images/main/section-2 latest releases/p-2.jpg" alt="queue-songs" width="100%" height="100%">
-                          </div>
-                          <div class="music-des">
-                            <h4>Alcohol Free</h4>
-                            <p class="fs-smallest">TWICE</p>
-                          </div>
-                        </div>
-                        <div class="display-flex music-right">
-                             
-                            <span class="mr-1"> <i class="fa-solid fa-heart "></i></span>
-                          
-                        </div>
-                    </div> 
-                    <div class="music-item display-flex highlight-hover">
-                        <div class="display-flex music-left">
-                          <p><i class="fa-solid fa-chart-simple"></i></p>
-                          <div class="music-image mr-1">
-                            <img src="../CN_Major_CSS_HTML/resources/Images/main/section-2 latest releases/p-3.jpg" alt="queue-songs" width="100%" height="100%">
-                          </div>
-                          <div class="music-des">
-                            <h4>Alcohol Free</h4>
-                            <p class="fs-smallest">TWICE</p>
-                          </div>
-                        </div>
-                        <div class="display-flex music-right">
-                             
-                            <span class="mr-1"> <i class="fa-solid fa-heart "></i></span>
-                          
-                        </div>
-                    </div>  
-                    <div class="music-item display-flex highlight-hover">
-                        <div class="display-flex music-left">
-                          <p>01</p>
-                          <div class="music-image mr-1">
-                            <img src="../CN_Major_CSS_HTML/resources/Images/main/section-2 latest releases/p-4.jpg" alt="queue-songs" width="100%" height="100%">
-                          </div>
-                          <div class="music-des">
-                            <h4>Alcohol Free</h4>
-                            <p class="fs-smallest">TWICE</p>
-                          </div>
-                        </div>
-                        <div class="display-flex music-right">
-                             
-                            <span class="mr-1"> <i class="fa-solid fa-heart "></i></span>
-                          
-                        </div>
-                    </div> 
-                    <div class="music-item display-flex highlight-hover">
-                        <div class="display-flex music-left">
-                          <p>01</p>
-                          <div class="music-image mr-1">
-                            <img src="../CN_Major_CSS_HTML/resources/Images/main/section-2 latest releases/p-1.jpg" alt="queue-songs" width="100%" height="100%">
-                          </div>
-                          <div class="music-des">
-                            <h4>Alcohol Free</h4>
-                            <p class="fs-smallest">TWICE</p>
-                          </div>
-                        </div>
-                        <div class="display-flex music-right">
-                             
-                            <span class="mr-1"> <i class="fa-solid fa-heart "></i></span>
-                          
-                        </div>
-                    </div> 
-                    <div class="music-item display-flex highlight-hover">
-                        <div class="display-flex music-left">
-                          <p>01</p>
-                          <div class="music-image mr-1">
-                            <img src="../CN_Major_CSS_HTML/resources/Images/main/section-2 latest releases/p-1.jpg" alt="queue-songs" width="100%" height="100%">
-                          </div>
-                          <div class="music-des">
-                            <h4>Alcohol Free</h4>
-                            <p class="fs-smallest">TWICE</p>
-                          </div>
-                        </div>
-                        <div class="display-flex music-right">
-                             
-                            <span class="mr-1"> <i class="fa-solid fa-heart "></i></span>
-                          
-                        </div>
-                    </div> 
-                    <div class="music-item display-flex highlight-hover">
-                        <div class="display-flex music-left">
-                          <p>01</p>
-                          <div class="music-image mr-1">
-                            <img src="../CN_Major_CSS_HTML/resources/Images/main/section-2 latest releases/p-1.jpg" alt="queue-songs" width="100%" height="100%">
-                          </div>
-                          <div class="music-des">
-                            <h4>Alcohol Free</h4>
-                            <p class="fs-smallest">TWICE</p>
-                          </div>
-                        </div>
-                        <div class="display-flex music-right">
-                             
-                            <span class="mr-1"> <i class="fa-solid fa-heart "></i></span>
-                          
-                        </div>
-                    </div> 
-                    <div class="music-item display-flex highlight-hover">
-                        <div class="display-flex music-left">
-                          <p>01</p>
-                          <div class="music-image mr-1">
-                            <img src="../CN_Major_CSS_HTML/resources/Images/main/section-2 latest releases/p-1.jpg" alt="queue-songs" width="100%" height="100%">
-                          </div>
-                          <div class="music-des">
-                            <h4>Alcohol Free</h4>
-                            <p class="fs-smallest">TWICE</p>
-                          </div>
-                        </div>
-                        <div class="display-flex music-right">
-                             
-                            <span class="mr-1"> <i class="fa-solid fa-heart "></i></span>
-                          
-                        </div>
-                    </div> 
-                    <div class="music-item display-flex highlight-hover">
-                        <div class="display-flex music-left">
-                          <p>01</p>
-                          <div class="music-image mr-1">
-                            <img src="../CN_Major_CSS_HTML/resources/Images/main/section-2 latest releases/p-1.jpg" alt="queue-songs" width="100%" height="100%">
-                          </div>
-                          <div class="music-des">
-                            <h4>Alcohol Free</h4>
-                            <p class="fs-smallest">TWICE</p>
-                          </div>
-                        </div>
-                        <div class="display-flex music-right">
-                             
-                            <span class="mr-1"> <i class="fa-solid fa-heart "></i></span>
-                          
-                        </div>
-                    </div> 
-                    <div class="music-item display-flex highlight-hover">
-                        <div class="display-flex music-left">
-                          <p>01</p>
-                          <div class="music-image mr-1">
-                            <img src="../CN_Major_CSS_HTML/resources/Images/main/section-2 latest releases/p-1.jpg" alt="queue-songs" width="100%" height="100%">
-                          </div>
-                          <div class="music-des">
-                            <h4>Alcohol Free</h4>
-                            <p class="fs-smallest">TWICE</p>
-                          </div>
-                        </div>
-                        <div class="display-flex music-right">
-                             
-                            <span class="mr-1"> <i class="fa-solid fa-heart "></i></span>
-                          
-                        </div>
-                    </div> 
-                    
-                 </div>
+            <div class="space-between s-a-item">
+              <div class="info">
+                <div class="mr-1">
+                  <img
+                    src="resources/Images/main/section-3-popular-artists/p-6.jpg"
+                    alt="artist"
+                    width="100%"
+                    height="100%"
+                  />
+                </div>
+                <div class="flex-column">
+                  <h5 class="mb-point5">Devi Sri Prasad</h5>
+                  <p class="fs-smallest">telugu artist</p>
+                </div>
+              </div>
+              <div class="options">
+                <span class="mb-point5"
+                  ><i class="fa-solid fa-ellipsis"></i
+                ></span>
+                <p class="fs-smallest">4:44</p>
+              </div>
             </div>
+            <div class="space-between s-a-item">
+              <div class="info">
+                <div class="mr-1">
+                  <img
+                    src="resources/Images/main/section-3-popular-artists/p-1.jpg"
+                    alt="artist"
+                    width="100%"
+                    height="100%"
+                  />
+                </div>
+                <div class="flex-column">
+                  <h5 class="mb-point5">Devi Sri Prasad</h5>
+                  <p class="fs-smallest">telugu artist</p>
+                </div>
+              </div>
+              <div class="options">
+                <span class="mb-point5"
+                  ><i class="fa-solid fa-ellipsis"></i
+                ></span>
+                <p class="fs-smallest">4:44</p>
+              </div>
+            </div>
+            <div class="space-between s-a-item">
+              <div class="info">
+                <div class="mr-1">
+                  <img
+                    src="resources/Images/main/section-3-popular-artists/p-3.jpg"
+                    alt="artist"
+                    width="100%"
+                    height="100%"
+                  />
+                </div>
+                <div class="flex-column">
+                  <h5 class="mb-point5">Devi Sri Prasad</h5>
+                  <p class="fs-smallest">telugu artist</p>
+                </div>
+              </div>
+              <div class="options">
+                <span class="mb-point5"
+                  ><i class="fa-solid fa-ellipsis"></i
+                ></span>
+                <p class="fs-smallest">4:44</p>
+              </div>
+            </div>
+            <div class="space-between s-a-item">
+              <div class="info">
+                <div class="mr-1">
+                  <img
+                    src="resources/Images/main/section-3-popular-artists/p-4.jpg"
+                    alt="artist"
+                    width="100%"
+                    height="100%"
+                  />
+                </div>
+                <div class="flex-column">
+                  <h5 class="mb-point5">Devi Sri Prasad</h5>
+                  <p class="fs-smallest">telugu artist</p>
+                </div>
+              </div>
+              <div class="options">
+                <span class="mb-point5"
+                  ><i class="fa-solid fa-ellipsis"></i
+                ></span>
+                <p class="fs-smallest">4:44</p>
+              </div>
+            </div>
+            <div class="space-between s-a-item">
+              <div class="info">
+                <div class="mr-1">
+                  <img
+                    src="resources/Images/main/section-3-popular-artists/p-2.jpg"
+                    alt="artist"
+                    width="100%"
+                    height="100%"
+                  />
+                </div>
+                <div class="flex-column">
+                  <h5 class="mb-point5">Devi Sri Prasad</h5>
+                  <p class="fs-smallest">telugu artist</p>
+                </div>
+              </div>
+              <div class="options">
+                <span class="mb-point5"
+                  ><i class="fa-solid fa-ellipsis"></i
+                ></span>
+                <p class="fs-smallest">4:44</p>
+              </div>
+            </div>
+          </div>
         </div>
+      </div>
+      <div class="grid-item">
+        <div class="grid-box scroll-overflow" id="playlist">
+          <div class="songs-container">
+            <div class="music-item display-flex highlight-hover">
+              <div class="display-flex music-left">
+                <p>01</p>
+                <div class="music-image mr-1">
+                  <img
+                    src="resources/Images/main/section-2-latest-releases/p-1.jpg"
+                    alt="queue-songs"
+                    width="100%"
+                    height="100%"
+                  />
+                </div>
+                <div class="music-des">
+                  <h4>Alcohol Free</h4>
+                  <p class="fs-smallest">TWICE</p>
+                </div>
+              </div>
+              <div class="display-flex music-right">
+                <span class="mr-1"> <i class="fa-solid fa-heart"></i></span>
+                <span><i class="fa-solid fa-plus mr-1"></i></span>
+                <span>4:44</span>
+              </div>
+            </div>
+            <div class="music-item display-flex highlight-hover">
+              <div class="display-flex music-left">
+                <p>02</p>
+                <div class="music-image mr-1">
+                  <img
+                    src="resources/Images/main/section-2-latest-releases/p-4.jpg"
+                    alt="queue-songs"
+                    width="100%"
+                    height="100%"
+                  />
+                </div>
+                <div class="music-des">
+                  <h4>Alcohol Free</h4>
+                  <p class="fs-smallest">TWICE</p>
+                </div>
+              </div>
+              <div class="display-flex music-right">
+                <span class="mr-1"> <i class="fa-solid fa-heart"></i></span>
+                <span><i class="fa-solid fa-plus mr-1"></i></span>
+                <span>4:44</span>
+              </div>
+            </div>
+            <div class="music-item display-flex highlight-hover">
+              <div class="display-flex music-left">
+                <p>03</p>
+                <div class="music-image mr-1">
+                  <img
+                    src="resources/Images/main/section-2-latest-releases/p-2.jpg"
+                    alt="queue-songs"
+                    width="100%"
+                    height="100%"
+                  />
+                </div>
+                <div class="music-des">
+                  <h4>Alcohol Free</h4>
+                  <p class="fs-smallest">TWICE</p>
+                </div>
+              </div>
+              <div class="display-flex music-right">
+                <span class="mr-1"> <i class="fa-solid fa-heart"></i></span>
+                <span><i class="fa-solid fa-plus mr-1"></i></span>
+                <span>4:44</span>
+              </div>
+            </div>
+            <div class="music-item display-flex highlight-hover">
+              <div class="display-flex music-left">
+                <p>04</p>
+                <div class="music-image mr-1">
+                  <img
+                    src="resources/Images/main/section-2-latest-releases/p-3.jpg"
+                    alt="queue-songs"
+                    width="100%"
+                    height="100%"
+                  />
+                </div>
+                <div class="music-des">
+                  <h4>Alcohol Free</h4>
+                  <p class="fs-smallest">TWICE</p>
+                </div>
+              </div>
+              <div class="display-flex music-right">
+                <span class="mr-1"> <i class="fa-solid fa-heart"></i></span>
+                <span><i class="fa-solid fa-plus mr-1"></i></span>
+                <span>4:44</span>
+              </div>
+            </div>
+            <div class="music-item display-flex highlight-hover">
+              <div class="display-flex music-left">
+                <p>05</p>
+                <div class="music-image mr-1">
+                  <img
+                    src="resources/Images/main/section-2-latest-releases/p-2.jpg"
+                    alt="queue-songs"
+                    width="100%"
+                    height="100%"
+                  />
+                </div>
+                <div class="music-des">
+                  <h4>Alcohol Free</h4>
+                  <p class="fs-smallest">TWICE</p>
+                </div>
+              </div>
+              <div class="display-flex music-right">
+                <span class="mr-1"> <i class="fa-solid fa-heart"></i></span>
+                <span><i class="fa-solid fa-plus mr-1"></i></span>
+                <span>4:44</span>
+              </div>
+            </div>
+            <div class="music-item display-flex highlight-hover">
+              <div class="display-flex music-left">
+                <p>01</p>
+                <div class="music-image mr-1">
+                  <img
+                    src="resources/Images/main/section-2-latest-releases/p-1.jpg"
+                    alt="queue-songs"
+                    width="100%"
+                    height="100%"
+                  />
+                </div>
+                <div class="music-des">
+                  <h4>Alcohol Free</h4>
+                  <p class="fs-smallest">TWICE</p>
+                </div>
+              </div>
+              <div class="display-flex music-right">
+                <span class="mr-1"> <i class="fa-solid fa-heart"></i></span>
+                <span><i class="fa-solid fa-plus mr-1"></i></span>
+                <span>4:44</span>
+              </div>
+            </div>
+            <div class="music-item display-flex highlight-hover">
+              <div class="display-flex music-left">
+                <p>01</p>
+                <div class="music-image mr-1">
+                  <img
+                    src="resources/Images/main/section-2-latest-releases/p-1.jpg"
+                    alt="queue-songs"
+                    width="100%"
+                    height="100%"
+                  />
+                </div>
+                <div class="music-des">
+                  <h4>Alcohol Free</h4>
+                  <p class="fs-smallest">TWICE</p>
+                </div>
+              </div>
+              <div class="display-flex music-right">
+                <span class="mr-1"> <i class="fa-solid fa-heart"></i></span>
+                <span><i class="fa-solid fa-plus mr-1"></i></span>
+                <span>4:44</span>
+              </div>
+            </div>
+            <div class="music-item display-flex highlight-hover">
+              <div class="display-flex music-left">
+                <p>01</p>
+                <div class="music-image mr-1">
+                  <img
+                    src="resources/Images/main/section-2-latest-releases/p-1.jpg"
+                    alt="queue-songs"
+                    width="100%"
+                    height="100%"
+                  />
+                </div>
+                <div class="music-des">
+                  <h4>Alcohol Free</h4>
+                  <p class="fs-smallest">TWICE</p>
+                </div>
+              </div>
+              <div class="display-flex music-right">
+                <span class="mr-1"> <i class="fa-solid fa-heart"></i></span>
+                <span><i class="fa-solid fa-plus mr-1"></i></span>
+                <span>4:44</span>
+              </div>
+            </div>
+            <div class="music-item display-flex highlight-hover">
+              <div class="display-flex music-left">
+                <p>01</p>
+                <div class="music-image mr-1">
+                  <img
+                    src="resources/Images/main/section-2-latest-releases/p-1.jpg"
+                    alt="queue-songs"
+                    width="100%"
+                    height="100%"
+                  />
+                </div>
+                <div class="music-des">
+                  <h4>Alcohol Free</h4>
+                  <p class="fs-smallest">TWICE</p>
+                </div>
+              </div>
+              <div class="display-flex music-right">
+                <span class="mr-1"> <i class="fa-solid fa-heart"></i></span>
+                <span><i class="fa-solid fa-plus mr-1"></i></span>
+                <span>4:44</span>
+              </div>
+            </div>
+            <div class="music-item display-flex highlight-hover">
+              <div class="display-flex music-left">
+                <p>01</p>
+                <div class="music-image mr-1">
+                  <img
+                    src="resources/Images/main/section-2-latest-releases/p-1.jpg"
+                    alt="queue-songs"
+                    width="100%"
+                    height="100%"
+                  />
+                </div>
+                <div class="music-des">
+                  <h4>Alcohol Free</h4>
+                  <p class="fs-smallest">TWICE</p>
+                </div>
+              </div>
+              <div class="display-flex music-right">
+                <span class="mr-1"> <i class="fa-solid fa-heart"></i></span>
+                <span><i class="fa-solid fa-plus mr-1"></i></span>
+                <span>4:44</span>
+              </div>
+            </div>
+            <div class="music-item display-flex highlight-hover">
+              <div class="display-flex music-left">
+                <p>01</p>
+                <div class="music-image mr-1">
+                  <img
+                    src="resources/Images/main/section-2-latest-releases/p-1.jpg"
+                    alt="queue-songs"
+                    width="100%"
+                    height="100%"
+                  />
+                </div>
+                <div class="music-des">
+                  <h4>Alcohol Free</h4>
+                  <p class="fs-smallest">TWICE</p>
+                </div>
+              </div>
+              <div class="display-flex music-right">
+                <span class="mr-1"> <i class="fa-solid fa-heart"></i></span>
+                <span><i class="fa-solid fa-plus mr-1"></i></span>
+                <span>4:44</span>
+              </div>
+            </div>
+            <div class="music-item display-flex highlight-hover">
+              <div class="display-flex music-left">
+                <p>01</p>
+                <div class="music-image mr-1">
+                  <img
+                    src="resources/Images/main/section-2-latest-releases/p-1.jpg"
+                    alt="queue-songs"
+                    width="100%"
+                    height="100%"
+                  />
+                </div>
+                <div class="music-des">
+                  <h4>Alcohol Free</h4>
+                  <p class="fs-smallest">TWICE</p>
+                </div>
+              </div>
+              <div class="display-flex music-right">
+                <span class="mr-1"> <i class="fa-solid fa-heart"></i></span>
+                <span><i class="fa-solid fa-plus mr-1"></i></span>
+                <span>4:44</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="grid-item">
+        <div class="grid-box scroll-overflow" id="recently-played">
+          <div class="space-between box-heading">
+            <h2>Recently Played</h2>
+            <p class="fs-smallest">View All</p>
+          </div>
+          <div>
+            <div class="music-item display-flex highlight-hover">
+              <div class="display-flex music-left">
+                <p>01</p>
+                <div class="music-image mr-1">
+                  <img
+                    src="resources/Images/main/section-2-latest-releases/p-1.jpg"
+                    alt="queue-songs"
+                    width="100%"
+                    height="100%"
+                  />
+                </div>
+                <div class="music-des">
+                  <h4>Alcohol Free</h4>
+                  <p class="fs-smallest">TWICE</p>
+                </div>
+              </div>
+              <div class="display-flex music-right">
+                <span class="mr-1"> <i class="fa-solid fa-heart"></i></span>
+              </div>
+            </div>
+            <div class="music-item display-flex highlight-hover">
+              <div class="display-flex music-left">
+                <p>02</p>
+                <div class="music-image mr-1">
+                  <img
+                    src="resources/Images/main/section-2-latest-releases/p-2.jpg"
+                    alt="queue-songs"
+                    width="100%"
+                    height="100%"
+                  />
+                </div>
+                <div class="music-des">
+                  <h4>Alcohol Free</h4>
+                  <p class="fs-smallest">TWICE</p>
+                </div>
+              </div>
+              <div class="display-flex music-right">
+                <span class="mr-1"> <i class="fa-solid fa-heart"></i></span>
+              </div>
+            </div>
+            <div class="music-item display-flex highlight-hover">
+              <div class="display-flex music-left">
+                <p><i class="fa-solid fa-chart-simple"></i></p>
+                <div class="music-image mr-1">
+                  <img
+                    src="resources/Images/main/section-2-latest-releases/p-3.jpg"
+                    alt="queue-songs"
+                    width="100%"
+                    height="100%"
+                  />
+                </div>
+                <div class="music-des">
+                  <h4>Alcohol Free</h4>
+                  <p class="fs-smallest">TWICE</p>
+                </div>
+              </div>
+              <div class="display-flex music-right">
+                <span class="mr-1"> <i class="fa-solid fa-heart"></i></span>
+              </div>
+            </div>
+            <div class="music-item display-flex highlight-hover">
+              <div class="display-flex music-left">
+                <p>01</p>
+                <div class="music-image mr-1">
+                  <img
+                    src="resources/Images/main/section-2-latest-releases/p-4.jpg"
+                    alt="queue-songs"
+                    width="100%"
+                    height="100%"
+                  />
+                </div>
+                <div class="music-des">
+                  <h4>Alcohol Free</h4>
+                  <p class="fs-smallest">TWICE</p>
+                </div>
+              </div>
+              <div class="display-flex music-right">
+                <span class="mr-1"> <i class="fa-solid fa-heart"></i></span>
+              </div>
+            </div>
+            <div class="music-item display-flex highlight-hover">
+              <div class="display-flex music-left">
+                <p>01</p>
+                <div class="music-image mr-1">
+                  <img
+                    src="resources/Images/main/section-2-latest-releases/p-1.jpg"
+                    alt="queue-songs"
+                    width="100%"
+                    height="100%"
+                  />
+                </div>
+                <div class="music-des">
+                  <h4>Alcohol Free</h4>
+                  <p class="fs-smallest">TWICE</p>
+                </div>
+              </div>
+              <div class="display-flex music-right">
+                <span class="mr-1"> <i class="fa-solid fa-heart"></i></span>
+              </div>
+            </div>
+            <div class="music-item display-flex highlight-hover">
+              <div class="display-flex music-left">
+                <p>01</p>
+                <div class="music-image mr-1">
+                  <img
+                    src="resources/Images/main/section-2-latest-releases/p-1.jpg"
+                    alt="queue-songs"
+                    width="100%"
+                    height="100%"
+                  />
+                </div>
+                <div class="music-des">
+                  <h4>Alcohol Free</h4>
+                  <p class="fs-smallest">TWICE</p>
+                </div>
+              </div>
+              <div class="display-flex music-right">
+                <span class="mr-1"> <i class="fa-solid fa-heart"></i></span>
+              </div>
+            </div>
+            <div class="music-item display-flex highlight-hover">
+              <div class="display-flex music-left">
+                <p>01</p>
+                <div class="music-image mr-1">
+                  <img
+                    src="resources/Images/main/section-2-latest-releases/p-1.jpg"
+                    alt="queue-songs"
+                    width="100%"
+                    height="100%"
+                  />
+                </div>
+                <div class="music-des">
+                  <h4>Alcohol Free</h4>
+                  <p class="fs-smallest">TWICE</p>
+                </div>
+              </div>
+              <div class="display-flex music-right">
+                <span class="mr-1"> <i class="fa-solid fa-heart"></i></span>
+              </div>
+            </div>
+            <div class="music-item display-flex highlight-hover">
+              <div class="display-flex music-left">
+                <p>01</p>
+                <div class="music-image mr-1">
+                  <img
+                    src="resources/Images/main/section-2-latest-releases/p-1.jpg"
+                    alt="queue-songs"
+                    width="100%"
+                    height="100%"
+                  />
+                </div>
+                <div class="music-des">
+                  <h4>Alcohol Free</h4>
+                  <p class="fs-smallest">TWICE</p>
+                </div>
+              </div>
+              <div class="display-flex music-right">
+                <span class="mr-1"> <i class="fa-solid fa-heart"></i></span>
+              </div>
+            </div>
+            <div class="music-item display-flex highlight-hover">
+              <div class="display-flex music-left">
+                <p>01</p>
+                <div class="music-image mr-1">
+                  <img
+                    src="resources/Images/main/section-2-latest-releases/p-1.jpg"
+                    alt="queue-songs"
+                    width="100%"
+                    height="100%"
+                  />
+                </div>
+                <div class="music-des">
+                  <h4>Alcohol Free</h4>
+                  <p class="fs-smallest">TWICE</p>
+                </div>
+              </div>
+              <div class="display-flex music-right">
+                <span class="mr-1"> <i class="fa-solid fa-heart"></i></span>
+              </div>
+            </div>
+            <div class="music-item display-flex highlight-hover">
+              <div class="display-flex music-left">
+                <p>01</p>
+                <div class="music-image mr-1">
+                  <img
+                    src="resources/Images/main/section-2-latest-releases/p-1.jpg"
+                    alt="queue-songs"
+                    width="100%"
+                    height="100%"
+                  />
+                </div>
+                <div class="music-des">
+                  <h4>Alcohol Free</h4>
+                  <p class="fs-smallest">TWICE</p>
+                </div>
+              </div>
+              <div class="display-flex music-right">
+                <span class="mr-1"> <i class="fa-solid fa-heart"></i></span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
-<!--footer player here-->
+    <!--footer player here-->
     <footer>
-        <div  class="player display-flex">
-            <div class="player-item pt-1" >
-              <div>
-                <img src="../CN_Major_CSS_HTML/resources/Images/main/section-2 latest releases/p-3.jpg" alt="image" height="100%" width="100%">
-              </div>
-              <div >
-                <marquee behavior="scroll" direction="right">
-                  <h3>TWICE album</h3>
-                  <p>The Feels</p>
-                </marquee>
-              </div>
-              <div class="display-flex player-fav">
-                <i class="fa-solid fa-heart"></i>
-                <i class="fa-solid fa-ellipsis"></i>
+      <div class="player display-flex">
+        <div class="player-item pt-1">
+          <div>
+            <img
+              src="resources/Images/main/section-2-latest-releases/p-3.jpg"
+              alt="image"
+              height="100%"
+              width="100%"
+            />
+          </div>
+          <div>
+            <marquee behavior="scroll" direction="right">
+              <h3>TWICE album</h3>
+              <p>The Feels</p>
+            </marquee>
+          </div>
+          <div class="display-flex player-fav">
+            <i class="fa-solid fa-heart"></i>
+            <i class="fa-solid fa-ellipsis"></i>
+          </div>
+        </div>
+        <div class="pt-2 player-item display-flex">
+          <div class="pt-2-item-1 display-flex">
+            <div class="center-items">
+              <h4>0:00</h4>
+            </div>
+            <div class="player-bar">
+              <div class="player-line"></div>
+              <div class="player-seek">
+                <div></div>
               </div>
             </div>
-            <div class="pt-2 player-item display-flex">
-              <div class="pt-2-item-1 display-flex">
-                <div class="center-items">
-                  <h4>0:00</h4>
-                </div>
-                <div class="player-bar">
-                  <div class="player-line"></div>
-                  <div class="player-seek">
-                    <div></div>
-                  </div>
-                </div>
-                <div class="center-items">
-                  <h4>1:43</h4>
-                </div>
+            <div class="center-items">
+              <h4>1:43</h4>
+            </div>
+          </div>
+          <div class="pt-2-item-2 display-flex">
+            <div class="center-items carousel on-hover-color">
+              <i class="fa-solid fa-shuffle"></i>
+            </div>
+            <div class="display-flex player-btn">
+              <div class="center-items on-hover-color">
+                <i class="fa-solid fa-backward-step"></i>
               </div>
-              <div class="pt-2-item-2 display-flex">
-                <div class="center-items carousel on-hover-color">
-                  <i class="fa-solid fa-shuffle"></i>
-                </div>
-                <div class="display-flex player-btn">
-                  <div class="center-items on-hover-color"><i class="fa-solid fa-backward-step"></i></div>
-                  <div class="center-items on-hover-color" ><i class="fa-regular fa-circle-pause" style="font-size: 1.5rem!important;"></i></div>
-                  <div class="center-items on-hover-color"><i class="fa-solid fa-forward-step"></i></div>
-                </div>
-                <div class="center-items pointer-cursor on-hover-color">
-                  <i class="fa-solid fa-repeat"></i>
-                </div>
+              <div class="center-items on-hover-color">
+                <i
+                  class="fa-regular fa-circle-pause"
+                  style="font-size: 1.5rem !important;"
+                ></i>
+              </div>
+              <div class="center-items on-hover-color">
+                <i class="fa-solid fa-forward-step"></i>
               </div>
             </div>
-            <div class="player-item display-flex pt-3" > 
-              <div class="center-items on-hover-color">
-                <i class="fa-solid fa-icons"></i>
-              </div>
-              <div class="center-items on-hover-color">
-                <i class="fa-solid fa-computer"></i>
-              </div>
-              <div class="volume">
-                <div class="center-items">
-                  <i class="fa-solid fa-volume-high"></i>
-                </div>
-                <div style="flex-grow: 1;">
-                  <div class="player-line"></div>
-                  <div class="player-seek">
-                    <div></div>
-                  </div>
-                </div>
-              </div>
-              <div class="center-items">
-                <i class="fa-solid fa-up-right-and-down-left-from-center"></i>
+            <div class="center-items pointer-cursor on-hover-color">
+              <i class="fa-solid fa-repeat"></i>
+            </div>
+          </div>
+        </div>
+        <div class="player-item display-flex pt-3">
+          <div class="center-items on-hover-color">
+            <i class="fa-solid fa-icons"></i>
+          </div>
+          <div class="center-items on-hover-color">
+            <i class="fa-solid fa-computer"></i>
+          </div>
+          <div class="volume">
+            <div class="center-items">
+              <i class="fa-solid fa-volume-high"></i>
+            </div>
+            <div style="flex-grow: 1;">
+              <div class="player-line"></div>
+              <div class="player-seek">
+                <div></div>
               </div>
             </div>
           </div>
+          <div class="center-items">
+            <i class="fa-solid fa-up-right-and-down-left-from-center"></i>
+          </div>
+        </div>
+      </div>
     </footer>
-</body>
+  </body>
 </html>
