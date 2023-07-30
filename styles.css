@@ -34,10 +34,9 @@ body{
 i{
     font-size: 1.3rem;
     cursor: pointer;
+    
 }
-#search-input i{
-    color: var(--m-t-color);
-}
+
 
 
 
@@ -181,6 +180,9 @@ figure{
     padding: 0.5rem 20px;
     display: flex;
     justify-content: space-between;
+}
+#search-input i{
+    color: var(--m-t-color);
 }
 #search-input input{
     padding: 2px;
@@ -401,7 +403,23 @@ main{
     text-align: center!important;
 }
 
+.artists-link{
+    height: 100%;
+    width: 100%;
+    background-color: var(--m-p-color);
+    display: none;
+}
+.artists-link a{
+    text-decoration: none;
+    color: white;
+}
+.artists-link i{
+    font-size: 2.5rem;
+}
 
+.s3-item:hover .artists-link{
+    display: flex;
+}
 
 
 /*section-4 s-4 music stations*/
